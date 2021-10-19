@@ -1,6 +1,10 @@
-function SumarNumeros(props){
-    const {num1,num2} = props;
-    const resultado = num1 + num2;
+import paisaje from './../../assets/images/paisaje.jpg';
+
+function SumarNumeros(){
+
+    var imgsize = {
+        width: "150px", heigth:"150px"
+    };
     //método
     const Suma = (num1, num2) =>{
         var resultado = num1 + num2;
@@ -10,6 +14,7 @@ function SumarNumeros(props){
     return(
         <div>
             <h1>Resultado Total </h1>
+            <img src={paisaje} className="App-logo" style={imgsize}/>
             <button onClick={ () => Suma(7,7)}>
                 Suma
             </button>

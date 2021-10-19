@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './Components/App/App';
 import reportWebVitals from './reportWebVitals';
 import SumarNumeros from './Components/SumarNumeros/SumarNumeros';
+//import paisaje from 'paisaje.jpg';
  
 
 ReactDOM.render(
   <React.StrictMode>
+    {/* <App /> */}
     <SumarNumeros num1= '8' num2='8'/>
   </React.StrictMode>,
   document.getElementById('root')
